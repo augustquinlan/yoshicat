@@ -7,9 +7,18 @@ enum RadioMessage {
 input.onButtonPressed(Button.A, function () {
     radio.sendMessage(RadioMessage.Hello)
 })
+radio.onReceivedMessage(RadioMessage.Hello, function () {
+	
+})
+radio.onReceivedMessage(RadioMessage.Help, function () {
+	
+})
 input.onButtonPressed(Button.AB, function () {
     radio.sendMessage(RadioMessage.Goodbye)
 })
 input.onButtonPressed(Button.B, function () {
     radio.sendMessage(RadioMessage.Help)
+})
+radio.onReceivedMessage(RadioMessage.Goodbye, function () {
+	
 })

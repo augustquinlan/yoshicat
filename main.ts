@@ -16,6 +16,9 @@ radio.onReceivedMessage(RadioMessage.Help, function () {
 input.onButtonPressed(Button.AB, function () {
     radio.sendMessage(RadioMessage.Goodbye)
 })
+/**
+ * Chat via multiple microbits!
+ */
 input.onButtonPressed(Button.B, function () {
     radio.sendMessage(RadioMessage.Help)
 })

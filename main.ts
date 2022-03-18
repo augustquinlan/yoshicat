@@ -8,10 +8,10 @@ input.onButtonPressed(Button.A, function () {
     radio.sendMessage(RadioMessage.Hello)
 })
 radio.onReceivedMessage(RadioMessage.Hello, function () {
-	
+    basic.showString("Hello!")
 })
 radio.onReceivedMessage(RadioMessage.Help, function () {
-	
+    basic.showString("Help!")
 })
 input.onButtonPressed(Button.AB, function () {
     radio.sendMessage(RadioMessage.Goodbye)
@@ -20,5 +20,5 @@ input.onButtonPressed(Button.B, function () {
     radio.sendMessage(RadioMessage.Help)
 })
 radio.onReceivedMessage(RadioMessage.Goodbye, function () {
-	
+    basic.showString("Goodbye.")
 })
